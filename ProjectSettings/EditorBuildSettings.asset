@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Main.unity
     guid: 7087bfa493715ca429db29bed9b61e78
+  - enabled: 1
+    path: Assets/OculusGo.unity
+    guid: 3ed98e095cca4134e89c8d7819ef90d0
