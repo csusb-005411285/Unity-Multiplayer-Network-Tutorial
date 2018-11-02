@@ -8,6 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Main.unity
     guid: 7087bfa493715ca429db29bed9b61e78
-  - enabled: 1
+  - enabled: 0
     path: Assets/OculusGo.unity
     guid: 3ed98e095cca4134e89c8d7819ef90d0
+  - enabled: 0
+    path: Assets/OculusGoSinglePlayer.unity
+    guid: 06341a6f857720d409d02d4f0cb923a8
+  - enabled: 1
+    path: Assets/OculusGoLAN.unity
+    guid: 46b0b29cc96b23446a0b0d7f33a9af4e
