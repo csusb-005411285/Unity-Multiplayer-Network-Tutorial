@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.Networking.Match;
 
 public class NetworkManagerController : NetworkBehaviour {
 
     public NetworkManager NetworkManagerRef;
 
-    public bool IsServer = false;
-
 	// Use this for initialization
 	void Start () {
-        if (!IsServer)
+        if (SystemInfo.deviceType == DeviceType.Desktop && SystemInfo.deviceModel == "Alienware Aurora R7 (Alienware)")
         {
-           this.NetworkManagerRef.StartClient();
+            this.NetworkManagerRef.StartHost();
         }
-        
+        if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            this.NetworkManagerRef.StartClient();
+        }
 	}
 	
 	// Update is called once per frame
